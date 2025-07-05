@@ -1,0 +1,222 @@
+/* Use a modern, easy-to-read font */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e6f7fa; /* Light blue background for the page */
+}
+
+/* Style the CTA banner */
+.cta-banner {
+  background-color: #1e7fa3; /* fallback color */
+  color: #ffffff; /* White text for contrast */
+  text-align: center;
+  padding-top: 100px;   /* Increased for taller section */
+  padding-bottom: 100px; /* Increased for taller section */
+  /* Add background image with a light overlay */
+  background-image: linear-gradient(rgba(30,127,163,0.7), rgba(30,127,163,0.9)), url('img/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  /* Make the banner tall and visually striking */
+  border-radius: 15px;
+}
+
+/* Main heading style */
+.cta-banner h1 {
+  margin-top: 0;         /* Remove extra space above heading */
+  font-size: 2.5em;
+  margin-bottom: 30px; /* Increased space below heading */
+}
+
+/* Description style */
+.cta-banner p {
+  font-size: 1.2em;
+  margin-bottom: 40px; /* Increased space below paragraph */
+  color: #d0f6ef; /* Soft teal for a gentle look */
+}
+
+/* Style the call-to-action button */
+.cta-button {
+  display: inline-block;
+  background-color: #20cfcf; /* Bright teal for attention */
+  color: #1e7fa3; /* Deep blue text for contrast */
+  padding: 15px 35px;
+  text-decoration: none;
+  font-size: 1.1em;
+  border-radius: 5px; /* Rounded corners for a friendly look */
+  font-weight: bold;
+  /* Make the button stand out */
+  box-shadow: 0 2px 8px rgba(30, 127, 163, 0.2);
+}
+
+/* Button hover effect for interactivity */
+.cta-button:hover {
+  background-color: #17b3b3;
+  color: #ffffff;
+}
+
+/* Site header styles */
+.site-header {
+  background-color: #20cfcf; /* Bright teal from the palette */
+  color: #1e7fa3; /* Deep blue text */
+  text-align: center;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.site-header h2 {
+  margin: 0;
+  font-size: 1.7em;
+  letter-spacing: 2px;
+}
+
+.info-section {
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  /* Use table display for simple two-column layout */
+  display: table;
+  width: 100%;
+}
+
+.info-image, .info-text {
+  display: table-cell;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.info-image {
+  padding: 30px;
+  width: 90%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.info-section img.info-image {
+  border-radius: 20px;
+}
+
+.info-text {
+  padding: 20px;
+  color: #1e7fa3;
+  background-color: #f4fcfd;
+  border-radius: 8px;
+}
+
+.info-text h3 {
+  margin-top: 0;
+  font-size: 1.5em;
+  color: #20cfcf;
+}
+
+.info-text p {
+  font-size: 1.1em;
+  margin-bottom: 0;
+}
+
+.event-section {
+  max-width: 600px;
+  margin: 40px auto;
+  background-color: #ffffff;
+  border: 1px solid #d0f6ef;
+  border-radius: 10px;
+  padding: 30px 20px;
+  text-align: center;
+  color: #1e7fa3;
+}
+
+.event-section h3 {
+  margin-top: 0;
+  color: #20cfcf;
+  font-size: 1.4em;
+}
+
+.event-section a {
+  color: #1e7fa3;
+  text-decoration: underline;
+}
+
+.popup-form {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(30,127,163,0.5);
+  display: flex; /* fallback for centering */
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.form-content {
+  background: #fff;
+  color: #1e7fa3;
+  padding: 30px 20px;
+  border-radius: 10px;
+  max-width: 350px;
+  width: 90%;
+  margin: auto;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(30,127,163,0.2);
+}
+
+.form-content h3 {
+  margin-top: 0;
+  color: #20cfcf;
+  text-align: center;
+}
+
+.form-content input,
+.form-content textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  margin-bottom: 12px;
+  border: 1px solid #d0f6ef;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.form-content button[type="submit"] {
+  background-color: #20cfcf;
+  color: #1e7fa3;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.form-content button[type="button"] {
+  background-color: #f4fcfd;
+  color: #1e7fa3;
+  border: 1px solid #20cfcf;
+  padding: 10px 18px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/* Success message style */
+.form-success-message {
+  background-color: #f4fcfd;
+  color: #1e7fa3;
+  border-radius: 8px;
+  padding: 30px 20px;
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 auto;
+  max-width: 350px;
+  box-shadow: 0 2px 8px rgba(30,127,163,0.2);
+}
+
+.site-footer {
+  background-color: #20cfcf;
+  color: #1e7fa3;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 40px;
+  font-size: 1em;
+}

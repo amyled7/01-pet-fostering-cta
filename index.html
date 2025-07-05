@@ -6,6 +6,71 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Content goes here -->
+  <header class="site-header">
+    <h2>PetQuest</h2>
+  </header>
+  <header class="cta-banner">
+    <h1>Open Your Heart: Foster a Rescue Pet Today!</h1>
+    <p>Fostering gives animals a safe, loving home while they wait for adoption. You can make a life-changing difference for a pet in need.</p>
+    <a href="#" class="cta-button" id="openFormBtn">Become a Foster</a>
+  </header>
+  <!-- Popup Form -->
+  <section id="popupForm" class="popup-form" style="display: none;">
+    <form class="form-content" id="fosterForm">
+      <h3>Foster Application</h3>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required><br><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" required><br><br>
+      <label for="message">Why do you want to foster?</label><br>
+      <textarea id="message" name="message" rows="4" required></textarea><br><br>
+      <button type="submit">Submit</button>
+      <button type="button" id="closeFormBtn">Close</button>
+    </form>
+    <div id="formSuccess" class="form-success-message" style="display: none;">
+      Application submitted, we will contact you shortly
+    </div>
+  </section>
+  <section class="info-section">
+    <img src="img/pet.jpg" alt="A happy foster pet" class="info-image">
+    <div class="info-text">
+      <h3>Why Foster a Pet?</h3>
+      <p>
+        Fostering helps pets adjust to home life and prepares them for adoption. It also frees up space in shelters, allowing more animals to be rescued. By fostering, you provide love, care, and a second chance for a pet in need.
+      </p>
+    </div>
+  </section>
+  <section class="event-section">
+    <h3>Upcoming Events & Adoption Details</h3>
+    <p>
+      <strong>Adoption Fair:</strong> Saturday, June 15th, 10am - 2pm<br>
+      Community Center, 123 Main Street
+    </p>
+    <p>
+      Meet wonderful pets looking for loving homes! Our team will be there to answer your questions about fostering and adoption.
+    </p>
+    <p>
+      <strong>Contact us:</strong> <a href="mailto:info@petquest.org">info@petquest.org</a>
+    </p>
+  </section>
+  <script>
+    // Show the popup form
+    document.getElementById('openFormBtn').onclick = function(event) {
+      event.preventDefault();
+      document.getElementById('popupForm').style.display = 'block';
+    };
+    // Hide the popup form
+    document.getElementById('closeFormBtn').onclick = function() {
+      document.getElementById('popupForm').style.display = 'none';
+    };
+    document.getElementById('fosterForm').onsubmit = function(event) {
+      event.preventDefault();
+      document.getElementById('fosterForm').style.display = 'none';
+      document.getElementById('formSuccess').style.display = 'block';
+    };
+  </script>
+  <footer class="site-footer">
+    <p>&copy; 2024 PetQuest. All rights reserved.</p>
+  </footer>
 </body>
 </html>
